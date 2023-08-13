@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "name": "chitra",
+      "time": "17:42",
+      "dob": "",
+      "male": "",
+      "female": "",
+      "others": "",
+      "mother": "ddd",
+      "father": "ddd",
+      "contact": 1111,
+      "adress": "ddd",
+      "id": 2
+    },
+    {
+      "name": "chitra",
+      "time": "23:18",
+      "dob": "",
+      "male": "",
+      "female": "",
+      "others": "",
+      "mother": "",
+      "father": "",
+      "contact": "",
+      "adress": "",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

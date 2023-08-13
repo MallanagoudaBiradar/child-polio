@@ -1,0 +1,50 @@
+<!-- Button trigger modal -->
+<button style="margin-left: 20px ; margin-top: 10px; font-weight: bold;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Add Vaccination details<mat-icon>control_point</mat-icon>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div style="background-color:lightblue;" class="modal-header">
+        <h1 class="modal-title" id="exampleModalLabel">Vaccination Details</h1>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="form-group mb-2">
+                <label for="exampleInputEmail1" style="font-weight: bolder;">Name Of the Vaccin</label><br>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Vaccin name">
+            </div><br>
+            <label for="appt">Duration:</label>
+                    <input type="time" id="appt" formControlName="time" name="appt"><br>
+            <div><br>
+                <input type="radio" id="contactChoice1" name="contact" value="email" />
+                <label formControlName="male" for="contactChoice1">Dose1</label>
+
+                <input type="radio" id="contactChoice2" name="contact" value="phone" />
+                <label formControlName="female" for="contactChoice2">Dose2</label>
+
+                <input type="radio" id="contactChoice3" name="contact" value="mail" />
+                <label formControlName="others" for="contactChoice3">Dose3</label>
+            </div><br>
+            <div>
+                <input type="radio" id="contactChoice1" name="contact" value="email" />
+                <label formControlName="male" for="contactChoice1">Active</label>
+
+                <input type="radio" id="contactChoice2" name="contact" value="phone" />
+                <label formControlName="female" for="contactChoice2">Inactive</label>
+
+            </div>
+        </form>
+      </div>
+      <div style="background-color: lightblue" class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <h5>Update Data</h5>
+                <div class="row">
+                    <form>
+                        <div class="form-group mb-2">
+                            <label for="exampleInputEmail1">Name Of Child</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1"  aria-describedby="emailHelp" [(ngModel)]="employee.name" name="name"  placeholder="Enter Name">
+                        </div><br>
+                        <label for="appt">Select a time:</label>
+                        <input type="time" id="appt" [(ngModel)]="employee.time"  name="time"><br>
+                        <form action="post"><br>
+                            DOB:<input type="date" [(ngModel)]="employee.dob" name="dob" value="">
+                        </form>
+                        <div><br>
+                            <div>
+                                <input type="radio" id="contactChoice1" name="contact" value="email" />
+                                <label for="contactChoice1">Male</label>
+    
+                                <input type="radio" id="contactChoice2" name="contact" value="phone" />
+                                <label for="contactChoice2">Female</label>
+    
+                                <input type="radio" id="contactChoice3" name="contact" value="mail" />
+                                <label  for="contactChoice3">Others</label>
+                            </div>
+                        </div><br>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Mother Name</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]="employee.mother" name="mother" placeholder="Mother Name">
+                        </div><br>
+                        <div class="form-group mb-2">
+                            <label for="exampleInputPassword1">Father Name</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]="employee.father" name="father" placeholder="Father Name">
+                        </div><br>
+                        <div class="form-group mb-2">
+                            <label for="exampleInputPassword1">Contact</label>
+                            <input type="number" class="form-control" id="exampleInputPassword1" [(ngModel)]="employee.contact" name="contact" placeholder="Number">
+                        </div>
+                        <div class="form-group mb-2">
+                            <label for="exampleInputPassword1">Adress</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]="employee.adress" name="adress" placeholder="Add Your Adress">
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <button (click)="update()" class="btn btn-success">Update</button>&nbsp;
+                    <button routerLink="/baby" class="btn btn-danger">back</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
